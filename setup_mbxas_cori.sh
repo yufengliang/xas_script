@@ -20,6 +20,7 @@
 #SBATCH -o $job.out
 #SBATCH -J ${system}.$job
 #SBATCH -n $nproc
+#SBATCH -C haswell
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-user=pcbee912@gmail.com
 
@@ -55,7 +56,7 @@ EOF
   wtime=00:30:00
   job=ana
   system=$system_in
-  nproc=24
+  nproc=32
 
   header $job.sh
 
@@ -65,7 +66,7 @@ EOF
   wtime=00:30:00
   job=state
   system=$system_in
-  nproc=24
+  nproc=32
 
   header $job.sh
 
