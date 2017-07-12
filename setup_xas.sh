@@ -63,6 +63,6 @@ EOF
   wtime=00:30:00
   job=state
   system=$system_in
-  nproc=32
+  nproc=24
 
   header $job.sh

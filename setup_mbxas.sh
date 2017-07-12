@@ -61,8 +61,8 @@ EOF
 
  # state
 
-  queue=debug
-  wtime=00:30:00
+  queue=regular
+  wtime=01:00:00
   job=state
   system=$system_in
   nproc=24
