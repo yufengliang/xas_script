@@ -20,8 +20,8 @@
 #SBATCH -o $job.out
 #SBATCH -J ${system}.$job
 #SBATCH -n $nproc
-#SBATCH --mail-type=FAIL
-#SBATCH --mail-user=pcbee912@gmail.com
+# SBATCH --mail-type=FAIL
+# SBATCH --mail-user=pcbee912@gmail.com
 
  . \$SLURM_SUBMIT_DIR/Input_Block.in
  \$SHIRLEY_ROOT/scripts/arvid/XAS_${job}.sh
